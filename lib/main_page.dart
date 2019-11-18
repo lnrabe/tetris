@@ -33,18 +33,25 @@ class MainPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: <Widget>[
-        Expanded(
-          flex: 3,
-          child: _buildGameSection(),
+    return Container(
+      alignment: Alignment.center,
+      color: Colors.amberAccent,
+      child: AspectRatio(
+        aspectRatio: 2 / 3,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            Expanded(
+              flex: 3,
+              child: _buildGameSection(),
+            ),
+            Expanded(
+              child: _buildControlSection(),
+            )
+          ],
         ),
-        Expanded(
-          child: _buildControlSection(),
-        )
-      ],
+      ),
     );
   }
 }

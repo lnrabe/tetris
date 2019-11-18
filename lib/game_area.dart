@@ -18,7 +18,6 @@ class GameArea extends StatelessWidget {
   Widget buildGameBoard(BuildContext context, BoxConstraints constraints) {
     double width = constraints.maxWidth;
     double height = constraints.maxHeight;
-    print(width);
 
     double boxWidth = width / numColumns;
 
