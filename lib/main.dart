@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tetris/main_page.dart';
+import 'package:tetris/piece.dart';
 
 void main() => runApp(MyApp());
 
@@ -7,6 +8,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    firstPiece.printLayout();
+    secondPiece.printLayout();
+
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -25,4 +29,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tetris/game_area.dart';
+import 'package:tetris/side_area.dart';
 
 class MainPage extends StatelessWidget {
   Widget _buildGameSection() {
@@ -10,15 +11,14 @@ class MainPage extends StatelessWidget {
         Expanded(
           flex: 2,
           child: Container(
-            width: 20,
             color: Colors.green,
             child: GameArea(),
           ),
         ),
         Expanded(
           child: Container(
-            width: 10,
             color: Colors.red,
+            child: SideArea(),
           ),
         ),
       ],
